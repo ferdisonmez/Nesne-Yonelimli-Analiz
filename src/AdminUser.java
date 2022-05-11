@@ -44,6 +44,6 @@ public class AdminUser implements IUsers,IObserver{
 
     @Override
     public void sendStateMessage(String message) {
-        System.out.println("Admin user gelen mesaj alındı:"+message);
+        System.out.println(this.name+" Admin user gelen mesaj alındı:"+message);
     }
 }
