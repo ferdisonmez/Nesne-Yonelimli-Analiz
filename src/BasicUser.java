@@ -3,11 +3,10 @@ public class BasicUser implements IUsers,IObserver{
     private String name;
     private String password;
     private String type;
-
     @Override
     public void print_log() {
 
-        System.out.println("Basic user giriş yaptı.");
+        System.out.println("Basic türünde bir kullanıcı kaydoldu.");
         System.out.println("İsmim: "+this.name);
     }
 
@@ -47,6 +46,6 @@ public class BasicUser implements IUsers,IObserver{
 
     @Override
     public void sendStateMessage(String message) {
-        System.out.println("Basic user gelen mesaj alındı:"+message);
+        System.out.println(this.name+" Basic user gelen mesaj alındı:"+message);
     }
 }
